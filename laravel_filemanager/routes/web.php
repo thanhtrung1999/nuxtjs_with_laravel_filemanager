@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'cors']], function () {
+Route::group(['prefix' => 'laravel-filemanager'], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });

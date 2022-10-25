@@ -41,9 +41,6 @@ export default {
       },
     };
   },
-  created() {
-    console.log("env", this.apiKeyTinyMCE);
-  },
   methods: {
     handlePickerImage(cb, value, meta) {
       var cmsURL = this.rootApiUrl + "laravel-filemanager?field_name=" + meta.fieldname;
